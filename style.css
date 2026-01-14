@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("/Backgrounds/darkgreen_futuristic_network.gif") no-repeat fixed center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #e5e7eb;
+  font-style: italic;
+}
+
+#content {
+  padding: 40px;
+  max-width: 700px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.spacer {
+  height: 600px;
+}
+
+/* Overlay */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.overlay-box {
+  background: #021e12;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.overlay-box h2 {
+  color: #f87171;
+}
+
+.overlay-box button {
+  border-radius: 10px;
+  background: #22c55e;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+h1, h2, .overlay-box h2 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+button, .continue-btn, .save-buttons button {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 500;
+}
+
+.continue-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #17763a;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.note {
+  margin-top: 15px;
+  font-size: 0.9em;
+  color: #94a3b8;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 1em;
+
+  background: rgba(2, 30, 18, 0.6); /* semi-transparent */
+  color: #e5e7eb;
+
+  border: 0.5px solid rgba(2, 30, 18, 0.6);
+  border-radius: 8px;
+
+  resize: none;
+  outline: none;
+  transition: background 0.3s, border 0.3s;
+}
+
+.soft {
+  color: #94a3b8;
+  font-style: italic;
+}
+
+#loader {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  opacity: 0.6;
+  z-index: 10;
+}
+
+#loader img {
+  width: 100px;
+  height: 100px;
+}
+
+.return-link {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 10px 20px;
+  border: 1px solid #126230;
+  border-radius: 8px;
+  color: #94a3b8;
+  text-decoration: none;
+}
+
+.return-link:hover {
+  background: rgba(2,30,18,0.85);
+}
+
+body.locked {
+  overflow: hidden;
+}
+
+.hint1 {
+  position: fixed;
+  bottom: 10px;
+  left: 12px;
+  font-size: 0.65rem;
+  opacity: 0.25;
+  user-select: none;
+}
+
+.hint2 {
+  position: fixed;
+  bottom: 10px;
+  right: 12px;
+  font-size: 0.65rem;
+  opacity: 0.25;
+  user-select: none;
+}
+
+.save-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 30, 18, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.save-box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 25px 30px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 320px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+.save-box p {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+.save-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.save-buttons button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+#confirmSave {
+  background: #22c55e;
+  color: #021e12;
+}
+
+#cancelSave {
+  background: transparent;
+  border: 1px solid #94a3b8;
+  color: #e5e7eb;
+}
+
+.hidden {
+  display: none;
+}

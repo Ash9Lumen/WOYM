@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>What’s On Your Mind ?</title>
+  <link rel="icon" type="image/png" href="/Backgrounds/questionMark.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="content">
+    <h1>What’s On Your Mind ?</h1>
+
+    <p class="soft">
+      This is a quiet space.<br>
+      No likes. No comments. No judgment.
+    </p>
+
+    <p>
+      Sometimes writing helps us focus.
+      Sometimes it helps us escape.
+    </p>
+
+    <p>
+      You don’t have to submit anything.<br>
+      Just type. Pause. Think.
+    </p>
+
+    <textarea placeholder="Confess your deep confession..."></textarea>
+
+  </div>
+
+  <!-- Awareness Overlay -->
+  <div id="overlay">
+    <div class="overlay-box">
+      <h2>This Page Was Observing You</h2>
+      <div id="report"></div>
+      <p class="note">
+        You thought this was a safe, quiet space.<br>
+        Most websites feel the same.
+      </p>
+      <!-- <button onclick="location.reload()">I Understand</button> -->
+      <button class="continue-btn" onclick="continueThinking()">Keep Thinking</button>
+    </div>
+  </div>
+
+  <!-- Background Loader -->
+  <div id="loader">
+  <img src="/Backgrounds/Spinner.gif" alt="Loading">
+  </div>
+
+  <small class="hint1">Some things are meant to be kept. Save your confession with ctrl + shift + s.</small>
+  <small class="hint2">iamaware</small>
+
+  <script src="script.js"></script>
+
+  <div id="saveOverlay" class="save-overlay hidden">
+  <div class="save-box">
+    <p>Do you want to keep this confession ?</p>
+    <div class="save-buttons">
+      <button id="confirmSave">Yes, save it</button>
+      <button id="cancelSave">No, let it fade</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
