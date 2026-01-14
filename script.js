@@ -107,7 +107,7 @@ document.addEventListener("keydown", (e) => {
 function revealSecret() {
   // Optional: small delay for effect
   setTimeout(() => {
-    window.location.href = "/Backgrounds/mirror.html";
+    window.location.href = "WOYM/Backgrounds/mirror.html";
   }, 500);
 }
 
@@ -216,3 +216,4 @@ But this moment still happened.
     URL.revokeObjectURL(url);
   }
 });
+
